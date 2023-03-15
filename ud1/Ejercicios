@@ -79,3 +79,95 @@ return (int) altura * 2 + base * 2;
 
 }
 -------------------------------------------------------------
+public class Coche {
+   private String modelo;
+    private String marca;
+    private String color;
+    private int  velocidad;
+
+   public Coche(){
+
+       this.modelo = "Gol";
+       this.marca = "Volkswagen";
+       this.color = "Gris";
+       this.velocidad = 0;
+
+   }
+
+   public Coche (String modelo, String marca, String color, int velocidad){
+       this.modelo = modelo;
+       this.marca = marca;
+       this.color = color;
+       this.velocidad= velocidad;
+
+   }
+
+   public String getModelo(){
+
+       return modelo;
+
+   }
+    public String getMarca(){
+
+        return marca;
+
+    }
+    public String getcolor(){
+
+        return color;
+
+    }
+    public int getvelocidad(){
+
+        return velocidad;
+
+    }
+
+    public void setModelo(String modelo){
+
+       this.modelo = modelo;
+
+    }
+    public void setMarca(String marca){
+
+        this.marca = marca;
+
+    }
+    public void setColor(String color){
+
+        this.color = color;
+
+    }
+    //aceleracion
+    public void setvelocidad(int velocidad){
+
+        this.velocidad=velocidad;
+
+
+    }
+    public int acelerar(){
+       velocidad=velocidad+10;
+       return velocidad;
+    }
+    public int frenar(){
+        velocidad=0;
+        return velocidad;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+--------------------------------------------------------------------
