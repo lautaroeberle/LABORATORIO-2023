@@ -171,3 +171,70 @@ public class Coche {
 }
 
 --------------------------------------------------------------------
+
+package ud1;
+
+public class Persona {
+
+    private String nombre;
+   private  String direccion;
+    private int edad;
+
+
+
+    public Persona(){
+
+        this.nombre = " Valentin torres erwerle";
+        this.direccion = "Qatar";
+        this.edad = 18;
+
+    }
+
+    public Persona(String nombre, String direccion, int edad){
+
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.edad = edad;
+
+    }
+
+    public String getNombre(){
+
+       return nombre;
+
+    }
+    public String getDireccion(){
+
+        return direccion;
+
+    }
+    public int getEdad(){
+
+        return edad;
+
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setDireccion(String direccion){
+        this.direccion = direccion;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    public String mostrarDatos(){
+        String Datos = "Nombre: " + nombre +" Direccion: "+ direccion + " Edad: "+ edad;
+        return Datos;
+    }
+
+
+
+
+
+
+
+
+}
+------------------------------------------------------------
+
