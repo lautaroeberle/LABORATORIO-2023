@@ -1,0 +1,81 @@
+public class Circulo {
+    private int radio;
+
+
+    public Circulo() {
+
+        this.radio = 2;
+    }
+
+
+    public Circulo(int radio) {
+
+        this.radio = radio;
+    }
+
+
+    public int getRadio() {
+
+        return radio;
+    }
+
+    public void setRadio(int radio) {
+        this.radio = radio;
+    }
+
+
+    public int calcularArea() {
+       return (int) Math.PI * radio * radio;
+    }
+
+
+    public int calcularPerimetro() {
+        return (int) Math.PI * 2 * radio;
+    }
+}
+
+
+---------------------------------------------------------------
+
+public class Rectangulo {
+    private int base;
+    private int altura;
+
+    public Rectangulo(int base, int altura){
+
+        this.base = base;
+        this.altura = altura;
+
+    }
+
+    public int getBase() {
+        return base;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setBase(int base){
+
+        this.base = base;
+    }
+    public void setAltura(int altura){
+
+        this.altura = altura;
+
+    }
+
+
+    public int calcularArea(){
+
+return (int) base * altura;
+    }
+    public int calcularPerimetro(){
+
+return (int) altura * 2 + base * 2;
+
+    }
+
+}
+-------------------------------------------------------------
